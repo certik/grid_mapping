@@ -1,0 +1,50 @@
+
+Grid Mapping Software by Andrew P. Kuprat and Stewart J. Mosso,
+part of Los Alamos National Laboratory's Truchas code.
+
+Copyright 2005.  The Regents of the University of California.
+
+A description of this grid mapping software is given in
+
+A. Kuprat and S.J. Mosso, "Efficient Algorithms for Mapping Cell
+Quantities between Overlapped 3-D Unstructured Meshes," Los Alamos
+National Laboratory Report LA-UR-05-5084, 2005.
+
+Contact telluride-support@lanl.gov if you have questions.
+
+This directory contains the routines gm_mesh_type.f90
+grid_mapping_utils.f90 hpsort.f90 overlap_module.f90
+grid_mapping_module.f90 driver.f90 driver_xlf.f90 for use in mapping
+cell fields between grids defined over the same 3-D domain.
+
+'driver.f90' demonstrates usage of the procedures in
+'grid_mapping_module.f90', including computation of the intersection
+volumes, reading and writing intersection volumes to disk, mapping
+cell fields, and destroying derived data types. 'driver_xlf.f90' is
+the same as 'driver.f90' but it contains calls to timing routines
+recognized by the IBM Fortran 95 compiler on Darwin.
+
+To build the executable 'maptest', type 'build_lf95' (on linux with 
+Lahey/Fujitsu Fortran 95 compiler), or 'build_xlf95' (on Darwin with 
+IBM Fortran 95 compiler), or edit 'build_f95' to call the appropriate
+Fortran 95 compiler (with appropriate flags) on your platform.
+
+Invoking 'maptest' will then cause 'taskfile' to be read, which causes
+a series of grid-to-grid mapping tests to be performed.  The grids for
+these tests are the *.ascii files.  The test function being mapped is
+1+sin(z).  There is ascii screen output, as well as the production of
+'gmv' graphics files.  The gmv files should be viewed with the gmv
+mesh viewer.  The gmv files ending in '_mesh_a.gmv' show the cell
+field 'cfield' defined on 'mesh_a'; the gmv files ending in
+'_mesh_b.gmv' show the cell field defined on 'mesh_b'; the gmv files
+ending in '_meshes_ab.gmv' show 'mesh_a' and 'mesh_b' superimposed.
+'taskfile' assigns various ascii grid files to 'mesh_a' and 'mesh_b'
+in the tests, and usually the source field is defined over 'mesh_a'
+and mapped to 'mesh_b'.  In one case however, 'reverse_order' is set
+to 'T' in 'taskfile' and in that case the field is mapped from
+'mesh_b' to 'mesh_a'.
+
+Andrew Kuprat
+July 7, 2005
+kuprat@earthlink.net
+

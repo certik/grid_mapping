@@ -1,0 +1,160 @@
+'*************************'
+'small_raw'
+'*************************'
+'mesh_a' 'tet-small.ascii'
+'mesh_b' 'hex1-small.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'small_cons'
+'*************************'
+'mesh_a' 'tet-small.ascii'
+'mesh_b' 'hex1-small.ascii'
+'reverse_order' F
+'exactly_conservative' T
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'small_cp'
+'*************************'
+'mesh_a' 'tet-small.ascii'
+'mesh_b' 'hex1-small.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' T
+'strict' T
+'defval' 0.d0
+'*************************'
+'med_raw'
+'*************************'
+'mesh_a' 'tet-med.ascii'
+'mesh_b' 'hex1-med.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'med_cons'
+'*************************'
+'mesh_a' 'tet-med.ascii'
+'mesh_b' 'hex1-med.ascii'
+'reverse_order' F
+'exactly_conservative' T
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'med_cp'
+'*************************'
+'mesh_a' 'tet-med.ascii'
+'mesh_b' 'hex1-med.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' T
+'strict' T
+'defval' 0.d0
+'*************************'
+'big_raw'
+'*************************'
+'mesh_a' 'tet2.ascii'
+'mesh_b' 'hex2.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'big_cons'
+'*************************'
+'mesh_a' 'tet2.ascii'
+'mesh_b' 'hex2.ascii'
+'reverse_order' F
+'exactly_conservative' T
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'big_cp'
+'*************************'
+'mesh_a' 'tet2.ascii'
+'mesh_b' 'hex2.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' T
+'strict' T
+'defval' 0.d0
+'*************************'
+'smallh_bigt'
+'*************************'
+'mesh_a' 'hex1-small.ascii'
+'mesh_b' 'tet2.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'smallh_bigt_reverse'
+'*************************'
+'mesh_a' 'hex1-small.ascii'
+'mesh_b' 'tet2.ascii'
+'reverse_order' T
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'smallh_bigt_cons'
+'*************************'
+'mesh_a' 'hex1-small.ascii'
+'mesh_b' 'tet2.ascii'
+'reverse_order' F
+'exactly_conservative' T
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'smallh_bigt_cp'
+'*************************'
+'mesh_a' 'hex1-small.ascii'
+'mesh_b' 'tet2.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' T
+'strict' T
+'defval' 0.d0
+'*************************'
+'smallt_bigh'
+'*************************'
+'mesh_a' 'tet-small.ascii'
+'mesh_b' 'hex2.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'bigt_smallh'
+'*************************'
+'mesh_a' 'tet2.ascii'
+'mesh_b' 'hex1-small.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0
+'*************************'
+'bigh_smallt'
+'*************************'
+'mesh_a' 'hex2.ascii'
+'mesh_b' 'tet-small.ascii'
+'reverse_order' F
+'exactly_conservative' F
+'preserve_constants' F
+'strict' T
+'defval' 0.d0

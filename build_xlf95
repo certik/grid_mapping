@@ -1,0 +1,13 @@
+cp gm_mesh_type.f90 gm_mesh_type.f
+cp grid_mapping_utils.f90 grid_mapping_utils.f
+cp hpsort.f90 hpsort.f
+cp overlap_module.f90 overlap_module.f
+cp grid_mapping_module.f90 grid_mapping_module.f
+cp driver_xlf.f90 driver_xlf.f
+xlf95 -O -o maptest gm_mesh_type.f grid_mapping_utils.f hpsort.f overlap_module.f grid_mapping_module.f driver_xlf.f
+rm gm_mesh_type.f
+rm grid_mapping_utils.f
+rm hpsort.f
+rm overlap_module.f
+rm grid_mapping_module.f
+rm driver_xlf.f
