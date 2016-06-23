@@ -1,0 +1,1 @@
+gfortran -O3 -march=native -ffast-math -funroll-loops -o maptest gm_mesh_type.f90 grid_mapping_utils.f90 hpsort.f90 overlap_module.f90 grid_mapping_module.f90 driver.f90
